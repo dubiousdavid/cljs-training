@@ -190,17 +190,3 @@ nil
 
 (login :registered)
 (login :unregistered)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
