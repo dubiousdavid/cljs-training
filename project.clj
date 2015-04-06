@@ -2,11 +2,3 @@
   :description "CLJS Training"
   :source-paths ["src"]
   :dependencies [[org.clojure/clojure "1.6.0"]])
-
-
-
-
-
-
-
-
