@@ -11,7 +11,7 @@
 [1 2 3]
 {:name "David" "age" 37}
 #{1 2 3}
-'(1 2 3)
+(list 1 2 3)
 #"[0-9]+"
 true
 false
@@ -34,6 +34,8 @@ nil
   (+ x y))
 
 (fn [x] (inc x))
+
+(defn add-one [x] (inc x))
 
 (loop [x 0]
   (if (< x 2)
@@ -69,7 +71,7 @@ nil
 (= false false true)
 (= 1 1.0)
 ; == type independent numeric equality check
-(== 1 1)
+(== 1 1.0)
 ; Commas are whitespace
 (= [1 2 3] [1, 2, 3])
 
@@ -127,7 +129,9 @@ nil
 
 (let [some-number 10]
   (str "some-number inside let: "
-       some-number))
+       some-number)
+  3
+  (+ 1 1))
 
 (str "some-number outside let: "
      some-number)
